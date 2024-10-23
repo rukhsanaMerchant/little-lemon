@@ -1,17 +1,19 @@
+import React from 'react';
 import './App.css';
-import Homepage from './Homepage';
-import AboutUs from './AboutUs';
-import Contact from './Contact';
+import Nav from './components/Nav';
+import Main from './components/Main';
+import Menu from './components/Menu';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
+
       <nav>
-        <ul>
-          <li><a href="/home">Homepage</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
+        <Nav />
+        <Main/>
+        <Menu/>
+        <Footer/>
       </nav>
     </div>
 
